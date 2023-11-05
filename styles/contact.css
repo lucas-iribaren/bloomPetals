@@ -1,0 +1,102 @@
+/* ---------- Contact ----------*/
+.bloc_accueil {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.bloc_titre {
+    display: flex;
+    flex-direction: column;
+}
+
+.big_logo_bp {
+    height: 170px;
+    border-radius: 20px;
+}
+
+
+.titre_form {
+    font-size: 32px;
+    color: #A05B53;
+    text-align: center;
+}
+
+.form_contact {
+    margin: auto;
+    margin-bottom: 40px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.text_form {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 15px;
+    height: 30px;
+    margin: 5px 0 20px;
+}
+
+.form_contact div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form_contact div div {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.zone_texte {
+    padding: 5px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+
+}
+
+.bloc_confidentialite {
+    border: solid 1px #ced4da;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.checkbox {
+    height: 20px;
+    margin: 0;
+}
+
+.button_form {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: #ced4da solid 2px;
+}
+
+/* ---------- /Contact ----------*/
+/* ---------- Media Queries ----------*/
+@media screen and (max-width: 766px) {
+
+    .big_logo_bp {
+        height: 100%;
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .big_logo_bp {
+        display: none;
+    }
+
+    .bloc_accueil {
+        justify-content: center;
+    }
+}

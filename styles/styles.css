@@ -1,0 +1,230 @@
+/* ---------- Balises ----------*/
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(247, 223, 237);
+    margin: auto;
+    max-width: 900px;
+    min-height: 100vh;
+    font-family: 'Indie Flower', cursive;
+}
+
+ul {
+    padding: 0;
+}
+
+main {
+    background-color: white;
+    padding: 15px;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+nav,
+footer {
+    margin: 5px 0 0;
+    padding: 10px 30px;
+    background-color: rgba(216, 112, 147, 0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: #A05B53;
+}
+
+form {
+    display: flex;
+}
+
+input {
+    font-family: 'Indie Flower';
+    font-size: 15px;
+    border: solid 5px rgb(247, 223, 237);
+}
+
+img {
+    object-fit: cover;
+}
+
+button {
+    border: 5px solid rgb(247, 223, 237);
+    cursor: pointer;
+}
+
+nav a {
+    margin-right: 20px;
+}
+
+a,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d87093;
+    text-decoration: underline;
+}
+
+h1,
+h2 {
+    margin: 0
+}
+
+h2 {
+    font-size: 20px
+}
+
+p {
+    font-size: 15px;
+    margin: 0;
+}
+
+em {
+    font-weight: bold;
+}
+
+hr {
+    border: solid palevioletred 1px;
+
+}
+
+/* ---------- /Balises ----------*/
+
+/* ---------- Classes ----------*/
+.bloc_nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    border-radius: 30px 0 0 30px;
+    padding: 3px 10px;
+    border-right: 0;
+    color: #A05B53;
+}
+
+.search::placeholder {
+    color: #A05B53;
+}
+
+.button_search {
+    border-radius: 0 30px 30px 0;
+    border-left: 0;
+}
+
+.fa-magnifying-glass {
+    color: #A05B53;
+    padding-right: 6px;
+    font-size: larger;
+}
+
+.logo_bp {
+    height: 50px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.mini_titre_principal,
+.titre_principal {
+    font-family: 'Fleur De Leah', cursive;
+    text-align: center;
+}
+
+.titre_principal {
+    font-size: 80px;
+}
+
+.mini_titre_principal {
+    font-size: 40px;
+}
+
+.text_pro {
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bloc_back_to_top {
+    text-align: center;
+
+}
+
+.card_img {
+    border: solid rgb(247, 223, 237) 2px;
+    padding: 5px;
+    margin: 5px 0;
+    height: 160px;
+
+}
+
+.div_header_menu,
+.div_footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+footer div * {
+    margin: 0 5px;
+}
+
+/* ---------- /Classes ----------*/
+/* ---------- Media Queries ----------*/
+
+@media screen and (max-width: 766px) {
+
+    nav,
+    footer {
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    main {
+        margin: 30px 0;
+    }
+
+    .search {
+        width: 100px;
+    }
+}
+
+
+@media screen and (max-width: 479px) {
+
+    footer {
+        justify-content: flex-start;
+    }
+
+    .bloc_nav {
+        display: block;
+    }
+
+    .logo_bp {
+        height: 130px;
+    }
+
+
+
+    .div_footer {
+        flex-direction: column;
+
+    }
+
+    .titre_principal {
+        font-size: 40px;
+    }
+
+    .search {
+        width: 100%;
+    }
+}

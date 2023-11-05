@@ -1,0 +1,115 @@
+
+/* ---------- Entreprise ----------*/
+.article_equipe,
+.article_accueil {
+    display: flex;
+}
+
+.bloc_qui_sommes_nous {
+    width: 60%;
+}
+
+.img_celine {
+    margin-right: 10px;
+    width: 40%;
+}
+
+.article_equipe div:nth-child(4) img {
+    object-position: top;
+}
+
+.article_equipe div:nth-child(5) img {
+    object-position: left;
+}
+
+.qui_sommes_nous {
+    font-size: 50px;
+    width: 300px;
+
+}
+
+.article_equipe {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img_equipe {
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+}
+
+.card_nom_equipe {
+    border: solid rgb(247, 223, 237) 2px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.article_info {
+    background-color: rgba(247, 223, 237, 0.3);
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 80px 0;
+    margin: 10px 0;
+
+}
+
+.bloc_info {
+    width: 250px;
+}
+
+.bloc_info .fa-solid {
+    font-size: xx-large;
+}
+
+/* ---------- /Entreprise ----------*/
+/* ---------- Media Queries ----------*/
+
+@media screen and (max-width: 600px) {
+
+    .article_accueil{
+        flex-direction: column;
+        
+    }
+    .img_celine{
+        width: 75%;
+        margin: auto;
+    }
+    .qui_sommes_nous{
+        font-size: 40px;
+        width: 60%;
+        margin-top: 20px;
+    }
+    .bloc_qui_sommes_nous{
+        margin: auto;
+        width: 75%;
+    }
+    .article_info{
+        flex-direction: column;
+        padding: 50px 0;
+    }
+    .bloc_info{
+        width: 300px;
+        margin: auto;
+        padding: 20px 0;
+    }
+}
+@media screen and (max-width: 450px) {
+
+    .img_celine{
+        width: 90%;
+    }
+    .qui_sommes_nous{
+        font-size: 40px;
+        width: 60%;
+        margin-top: 20px;
+    }
+    .bloc_qui_sommes_nous{
+        margin: auto;
+        width: 90%;
+    }
+}

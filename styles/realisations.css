@@ -1,0 +1,94 @@
+a {
+    text-decoration: underline;
+}
+
+.bloc_realisations {
+    background-color: rgb(33, 32, 32);
+    color: #ced4da;
+    text-align: center;
+    padding: 10px;
+}
+
+.titre_nos_realisations {
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.demande_sur_mesure {
+    border-top: 1px solid rgb(229, 222, 201);
+    margin: 0 10px;
+    font-size: 20px;
+    padding-top: 10px;
+    color: rgb(202, 191, 159);
+}
+
+.section_realisations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.img_realisations {
+    height: 300px;
+    width: 25%;
+    border-radius: 5%;
+    margin: 10px;
+}
+
+.img_realisations:hover {
+
+    width: 42%;
+    transition: 2s ease;
+}
+
+
+.border_top {
+    border-top: 2px solid #ced4da;
+    margin: 3px 0;
+    padding-top: 20px;
+}
+
+section p {
+    text-align: center;
+    margin: 30px 0;
+}
+/* ---------- Media Queries ----------*/
+
+@media screen and (max-width: 840px) {
+
+    main {
+        padding: 15px 0;
+    }
+    .img_realisations {
+        width: 35%;
+        height: 250px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .img_realisations {
+        width: 80%;
+    }
+
+    .img_realisations:hover {
+        width: 80%;
+        transition: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .img_realisations {
+        width: 100%;
+        height: 300px;
+        object-position: center;
+    }
+
+    .img_realisations:hover {
+        width: 100%;
+    }
+}
